@@ -1,0 +1,26 @@
+.footer {
+  background: #202232;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_main {
+  display: flex;
+  align-items: center;
+}
+.footer_main p:nth-child(1) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3f59ff;
+  margin-right: 5px;
+}
+.footer_main p:nth-child(2) {
+  color: #a6aac3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
