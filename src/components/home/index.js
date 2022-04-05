@@ -4,6 +4,7 @@ import "./home.css";
 import { Billford, Question, User } from "./../export/index";
 import Viza from "../../assets/img/Visa.png";
 import Qiwi from "../../assets/img/Qiwi.png";
+import ModalLogin from "../modallogin";
 
 function Home() {
   const {
@@ -23,7 +24,7 @@ function Home() {
             <Question />
             <p>Как это работает?</p>
           </div>
-          <div className='forma'>
+          <div className="forma">
             <label className="login">
               <input
                 {...register("login", { required: true })}

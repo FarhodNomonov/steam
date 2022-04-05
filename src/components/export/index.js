@@ -234,4 +234,19 @@ export const Billford = () => {
     </svg>
   );
 };
-
+export const Close = () => {
+  return (
+    <svg
+      width="27"
+      height="27"
+      viewBox="0 0 27 27"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22.5194 27L0 4.49445L4.48057 0.0166452L27 22.5222L22.5194 27ZM4.48057 26.9834L1.0484e-06 22.5056L22.5194 0L27 4.4778L4.48057 26.9834Z"
+        fill="#A6AAC3"
+      />
+    </svg>
+  );
+};
