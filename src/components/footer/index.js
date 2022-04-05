@@ -34,9 +34,9 @@ function Footer() {
   ];
   return (
     <div className="footer">
-      {DataTitle.map((data) => {
+      {DataTitle.map((data, i) => {
         return (
-          <div className="footer_main">
+          <div key={i} className="footer_main">
             <p>{data.title}</p>
             <p>{data.price}</p>
           </div>

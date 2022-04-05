@@ -37,9 +37,9 @@
   padding: 14px 36px;
   background: #202232;
   margin-bottom: 30px;
+  border-radius: 12px;
 }
 .login > input {
-  padding: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -51,31 +51,48 @@
 .form_login_flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 250px;
 }
+.price_ > input:focus ~ svg g,
+.login > input:focus ~ .form_login_flex svg g {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .form_login {
   display: flex;
   align-items: center;
   background: #2b2e44;
   border-radius: 16px;
   padding: 12px 20px;
+  cursor: pointer;
 }
+
+.form_login:hover p {
+  color: #ffffff;
+}
+.form_login:hover svg path {
+  fill: #ffffff;
+}
+
 .form_login p {
   margin-left: 5px;
-}
-.form_login_flex svg {
-  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a6aac3;
 }
 .price_ {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 759px;
-  padding: 14px 36px;
   background: #202232;
   margin-bottom: 30px;
+  padding: 23px 36px;
+  border-radius: 12px;
 }
 .price_ input {
-  padding: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -91,6 +108,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  cursor: pointer;
+  justify-content: space-between;
+  width: max-content;
+  margin-right: 10px;
 }
 .input_radio input {
   width: 24px;
@@ -118,7 +139,22 @@
   line-height: 140%;
   color: #ffffff;
   margin-left: 12px;
+  user-select: none;
 }
+.checkbox_inp input {
+  display: none;
+}
+
+.checkbox_inp input:checked ~ .default-checkbox {
+  display: none;
+}
+.checkbox_inp .checked-checkbox {
+  display: none;
+}
+.checkbox_inp input:checked ~ .checked-checkbox {
+  display: inline-block !important;
+}
+
 .home_left .forma button {
   width: 100%;
   padding: 23px 0;
@@ -130,6 +166,10 @@
   line-height: 18px;
   color: #ffffff;
   margin-bottom: 53px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-origin: border-box;
+  user-select: none;
 }
 .home_price_flex {
   display: flex;
@@ -179,4 +219,20 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card_ input {
+  display: none;
+}
+
+.card_ input:checked ~ span {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
 }

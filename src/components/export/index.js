@@ -45,8 +45,8 @@ export const Logo = () => {
           y2="46"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#354DDF" />
-          <stop offset="1" stop-color="#1E2E91" />
+          <stop stopColor="#354DDF" />
+          <stop offset="1" stopColor="#1E2E91" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_1"
@@ -56,8 +56,8 @@ export const Logo = () => {
           y2="54.7401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3F59FF" />
-          <stop offset="1" stop-color="#15216F" />
+          <stop stopColor="#3F59FF" />
+          <stop offset="1" stopColor="#15216F" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_0_1"
@@ -67,8 +67,8 @@ export const Logo = () => {
           y2="54.7401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3F59FF" />
-          <stop offset="1" stop-color="#15216F" />
+          <stop stopColor="#3F59FF" />
+          <stop offset="1" stopColor="#15216F" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_0_1"
@@ -78,8 +78,8 @@ export const Logo = () => {
           y2="54.7401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3F59FF" />
-          <stop offset="1" stop-color="#15216F" />
+          <stop stopColor="#3F59FF" />
+          <stop offset="1" stopColor="#15216F" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_0_1"
@@ -89,8 +89,8 @@ export const Logo = () => {
           y2="54.7401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3F59FF" />
-          <stop offset="1" stop-color="#15216F" />
+          <stop stopColor="#3F59FF" />
+          <stop offset="1" stopColor="#15216F" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_0_1"
@@ -100,8 +100,8 @@ export const Logo = () => {
           y2="54.7401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3F59FF" />
-          <stop offset="1" stop-color="#15216F" />
+          <stop stopColor="#3F59FF" />
+          <stop offset="1" stopColor="#15216F" />
         </linearGradient>
       </defs>
     </svg>
@@ -117,8 +117,8 @@ export const Telegram = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M26 12.5C26 19.4031 20.1793 25 13 25C5.82075 25 0 19.4031 0 12.5C0 5.59687 5.82075 0 13 0C20.1793 0 26 5.59687 26 12.5ZM13.4658 9.22812C12.2016 9.73333 9.67417 10.7802 5.88467 12.3677C5.26933 12.6031 4.9465 12.8333 4.91725 13.0583C4.86742 13.4396 5.36358 13.5896 6.03742 13.7927C6.1295 13.8208 6.22483 13.849 6.32233 13.8802C6.98642 14.0875 7.87908 14.3302 8.34275 14.3396C8.76417 14.3479 9.23433 14.1812 9.75325 13.8396C13.2936 11.5406 15.1212 10.3792 15.236 10.3542C15.3173 10.3365 15.4299 10.3135 15.5058 10.3792C15.5816 10.4437 15.574 10.5667 15.5664 10.6C15.5166 10.801 13.5731 12.5396 12.5656 13.4396C12.2514 13.7198 12.0293 13.9187 11.9838 13.9646C11.882 14.0656 11.778 14.1625 11.6783 14.2552C11.0608 14.826 10.5993 15.2552 11.7043 15.9552C12.2352 16.2917 12.6598 16.5698 13.0834 16.8469C13.546 17.15 14.0075 17.4521 14.6055 17.8292C14.7572 17.925 14.9023 18.024 15.0443 18.1208C15.5827 18.4906 16.0669 18.8219 16.6649 18.7698C17.0116 18.7385 17.3713 18.425 17.5532 17.4885C17.9833 15.274 18.8305 10.4781 19.0266 8.50104C19.0385 8.33689 19.0312 8.17197 19.0049 8.00937C18.9892 7.87805 18.9226 7.75722 18.8186 7.67083C18.6637 7.54896 18.4232 7.52292 18.3148 7.525C17.8263 7.53333 17.0766 7.78437 13.4658 9.22812Z"
         fill="#A6AAC3"
       />
@@ -212,7 +212,7 @@ export const Billford = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.5" clip-path="url(#clip0_1_346)">
+      <g opacity="0.5" clipPath="url(#clip0_1_346)">
         <path
           d="M21.294 21.754C19.9044 21.7539 18.7738 20.6234 18.7738 19.2338V15.0485C18.7738 13.6588 19.9044 12.5283 21.294 12.5283H27.8608C27.9005 12.5283 27.9401 12.5295 27.9794 12.5313V8.36204C27.9794 7.28883 27.1094 6.41882 26.0362 6.41882H1.94328C0.870005 6.41876 0 7.28876 0 8.36198V25.9202C0 26.9935 0.870005 27.8635 1.94328 27.8635H26.0362C27.1094 27.8635 27.9794 26.9935 27.9794 25.9202V21.751C27.9401 21.7528 27.9005 21.754 27.8608 21.754H21.294Z"
           fill="#A6AAC3"
@@ -234,4 +234,59 @@ export const Billford = () => {
     </svg>
   );
 };
-
+export const CustomCard = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="12" r="11" stroke="#202232" strokeWidth="2" />
+    </svg>
+  );
+};
+export const CustomCheck = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="12" r="11" stroke="#A6AAC3" strokeWidth="2" />
+      <circle cx="12" cy="12" r="7" fill="#A6AAC3" />
+    </svg>
+  );
+};
+export const Checkbox = ({ className = "icon" }) => {
+  return (
+    <svg
+      className={className}
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="white" />
+    </svg>
+  );
+};
+export const CheckboxChecked = ({ className = "icon" }) => {
+  return (
+    <svg
+      className={className}
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="blue"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="blue" />
+      <path d="M3 8.5L6.5 12L13 4.5" stroke="white" />
+    </svg>
+  );
+};
