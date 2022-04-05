@@ -5,9 +5,8 @@ import Modal from "./../Modal";
 
 function Header() {
   const [FAQ, setFAQ] = React.useState(false);
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.overflow = FAQ ? "hidden" : "auto";
-  });
+  document.body.style.overflow = FAQ ? "hidden" : "auto";
+  
   return (
     <div className="header">
       <div className="header_logo">

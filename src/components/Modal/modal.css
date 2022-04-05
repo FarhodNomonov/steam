@@ -1,11 +1,11 @@
 .modal {
+  max-width: 90%;
   width: 1200px;
   height: 750px;
   background: #202232;
   border-radius: 20px;
   position: fixed;
   padding: 34px;
-  position: relative;
   z-index: 2;
 }
 .modal_close_ {
@@ -30,7 +30,7 @@
   align-items: center;
   gap: 50px;
 }
-.modal__icon_flex  p {
+.modal__icon_flex p {
   width: 165px;
   font-style: normal;
   font-weight: 500;
@@ -42,14 +42,20 @@
 .modal_question {
   padding: 0 66px;
 }
+
+.modal_question_card_flex {
+  display: grid;
+  background: #171926;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
 .modal_question_card {
   width: 100%;
   padding: 23px 30px;
   display: flex;
   justify-content: space-between;
-  background: #171926;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  cursor: pointer;
 }
 .modal_question_card p {
   font-style: normal;
@@ -57,4 +63,47 @@
   font-size: 20px;
   line-height: 16px;
   color: #a6aac3;
+}
+.modal_question_card_answer {
+  width: 100%;
+  padding: 23px 30px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  height: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #a6aac3;
+  transform-origin: top center;
+  transition: 0.1s ease-in-out transform, 0.3s ease-in-out height,
+    0.1s ease-in-out padding;
+  opacity: 0;
+  -webkit-transition: 0.1s ease-in-out transform, 0.3s ease-in-out height,
+    0.1s ease-in-out padding;
+  -moz-transition: 0.1s ease-in-out transform, 0.3s ease-in-out height,
+    0.1s ease-in-out padding;
+  -ms-transition: 0.1s ease-in-out transform, 0.3s ease-in-out height,
+    0.1s ease-in-out padding;
+  -o-transition: 0.1s ease-in-out transform, 0.3s ease-in-out height,
+    0.1s ease-in-out padding;
+}
+.modal_question_card_answer.active {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  height: auto;
+  padding: 23px 30px;
+  opacity: 1;
+  transition: 0.3s ease-in-out opacity, 0.1s ease-in-out padding;
+  -webkit-transition: 0.3s ease-in-out opacity, 0.1s ease-in-out padding;
+  -moz-transition: 0.3s ease-in-out opacity, 0.1s ease-in-out padding;
+  -ms-transition: 0.3s ease-in-out opacity, 0.1s ease-in-out padding;
+  -o-transition: 0.3s ease-in-out opacity, 0.1s ease-in-out padding;
+}
+.responsive-ul-list-modal {
+  display: none;
 }

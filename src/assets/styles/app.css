@@ -6,6 +6,7 @@
   font-family: "Inter", sans-serif;
   outline: none;
   user-select: none;
+  scroll-behavior: smooth;
 }
 input[type="number"]::-webkit-inner-spin-button {
   display: none;

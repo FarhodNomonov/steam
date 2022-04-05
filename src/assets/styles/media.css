@@ -18,7 +18,38 @@
     width: 650px;
   }
 }
+
 @media screen and (max-width: 1200px) {
+  .modal_icon_flex {
+    gap: 10px;
+  }
+  .modal_question {
+    padding: 0;
+  }
+  .modal__icon_flex p,
+  .modal__icon_flex .modal__icon svg {
+    display: none;
+  }
+  .modal__icon_flex {
+    margin-bottom: 10px;
+  }
+  .responsive-ul-list-modal {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    margin-bottom: 10px;
+  }
+  .modal {
+    overflow-y: auto;
+  }
+  .responsive-ul-list-modal li {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
   .home {
     flex-direction: column;
   }
@@ -32,10 +63,6 @@
   .card_ {
     width: 50%;
   }
-  .home_right {
-  }
-}
-@media screen and (max-width: 1200px) {
   .header {
     justify-content: space-between;
   }
@@ -56,6 +83,51 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .modal_close_ {
+    justify-content: center;
+  }
+  .modal {
+    padding: 15px;
+    height: calc(100vh - 60px);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .center-fixed-modal {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .modal__icon_flex .modal__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .responsive-ul-list-modal li {
+    font-size: 100%;
+  }
+  .modal_close_ svg {
+    width: 20px;
+    height: 20px;
+  }
+  .modal_question_card svg {
+    width: 10px;
+    height: 10px;
+  }
+  .modal_question_card_flex {
+    margin-bottom: 10px;
+  }
+  .modal_question_card p {
+    font-size: 14px;
+  }
+  .modal_question_card_answer.active {
+    font-size: 12px;
+  }
+  .modal_question_card_answer.active,
+  .modal_question_card {
+    padding: 10px;
+  }
   .form_login p {
     font-size: 12px;
   }
@@ -105,6 +177,45 @@
   .form_login {
     padding: 10px;
   }
+  .modal_login-body {
+    padding: 10px;
+    max-width: 90%;
+    height: max-content;
+  }
+  .modal_icon_close {
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .modal_icon_close svg {
+    width: 20px;
+    height: 20px;
+  }
+  .modal_account_img {
+    padding: 0;
+  }
+  .modal_account_img img {
+    width: 100%;
+  }
+  .home_right > p,
+  .modal_title span a,
+  .modal_title p {
+    font-size: 14px;
+  }
+  .modal_btn {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .button-linear {
+    padding: 10px;
+  }
+  .master_card .error-input-text {
+    position: absolute;
+    margin-top: -20px;
+  }
+  .error-input-text {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 582px) {
   .header {
@@ -143,6 +254,7 @@
     width: 12px;
     height: 12px;
   }
+
   .home_right {
     background: none;
     border: none;
@@ -199,17 +311,15 @@
     margin-right: 12px;
   }
 }
-@media screen and (max-width: 412px) {
-  .form_login {
-    padding: 2px;
-  }
-  .form_login p {
-    font-size: 8px;
-  }
-  .card_ {
-    padding: 5px;
-  }
-  .footer {
-    padding: 10px;
-  }
+.form_login p {
+  font-size: 8px;
+}
+.card_ {
+  padding: 5px;
+}
+.footer {
+  padding: 10px;
+}
+.form_login {
+  padding: 5px 12px;
 }
