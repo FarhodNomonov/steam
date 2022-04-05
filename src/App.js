@@ -3,13 +3,13 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
 import "./App.css";
+import "./media.css";
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        
       </Routes>
       <Footer />
     </div>

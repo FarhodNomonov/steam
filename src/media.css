@@ -1,0 +1,83 @@
+@media screen and (max-width: 1441px) {
+  .home {
+    padding: 80px 60px;
+  }
+  .footer_main p:nth-child(2) {
+    width: 150px;
+  }
+  .footer {
+    overflow: hidden;
+  }
+  .login {
+    width: 100%;
+  }
+  .price_ {
+    width: 100%;
+  }
+  .home_left {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+  }
+  .home_left {
+    width: auto;
+    margin-bottom: 25px;
+  }
+  .home_right {
+    margin: 0px;
+  }
+  .card_ {
+    width: 50%;
+  }
+  .home_right {
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header_logo {
+    width: 35%;
+  }
+  .header_logo svg {
+    width: 100%;
+  }
+  .header_icon {
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .header_icon svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form_login p {
+    font-size: 12px;
+  }
+  .price_ input {
+    font-size: 20px;
+  }
+  .input_radio p {
+    font-size: 16px;
+  }
+  .checkbox_inp p {
+    font-size: 12px;
+  }
+  .home_form_icon p {
+    font-size: 16px;
+  }
+  .login > input {
+    font-size: 20px;
+  }
+  .home_left > h1 {
+    font-size: 30px;
+  }
+  .home {
+      padding: 50px 20px;
+  }
+}
