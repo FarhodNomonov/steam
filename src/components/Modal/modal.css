@@ -5,6 +5,8 @@
   border-radius: 20px;
   position: fixed;
   padding: 34px;
+  position: relative;
+  z-index: 2;
 }
 .modal_close_ {
   display: flex;
@@ -14,14 +16,21 @@
 }
 .modal_icon_flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 .modal__icon_flex {
-  display: flex;
+  display: grid;
   align-items: center;
   margin-bottom: 50px;
 }
-.modal__icon p {
+.modal__icon_flex .modal__icon {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.modal__icon_flex  p {
   width: 165px;
   font-style: normal;
   font-weight: 500;

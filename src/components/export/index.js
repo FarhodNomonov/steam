@@ -141,9 +141,10 @@ export const Vk = () => {
     </svg>
   );
 };
-export const Faq = () => {
+export const Faq = ({ onClick }) => {
   return (
     <svg
+      onClick={onClick}
       width="47"
       height="20"
       viewBox="0 0 47 20"

@@ -18,6 +18,7 @@ import ethereum from "../../assets/img/ethereum.svg";
 import { CustomCheck } from "./../export";
 import ModalLogin from "./../modallogin";
 
+
 const prices = [
   {
     id: 1,
@@ -47,7 +48,7 @@ function Home() {
 
   const [priceState, setPriceState] = React.useState(null);
   const [openNumber, setOpenNumber] = React.useState(false);
-
+ 
   const [openUserLogin, setOpenUserLogin] = React.useState(false);
 
   const CalcPrice = (price) => {
@@ -73,6 +74,7 @@ function Home() {
   return (
     <>
       {openUserLogin && <ModalLogin setOpen={setOpenUserLogin} />}
+     
       <form onSubmit={handleSubmit(onSubmit)} className="home">
         <div className="home_left">
           <h1>Пополни баланс Steam</h1>

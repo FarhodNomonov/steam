@@ -1,8 +1,13 @@
 import React from "react";
 import "./header.css";
-import { Faq, Logo, Vk, Telegram } from "./../export/index";
+import { Faq, Logo, Vk, Telegram } from "./../export";
+import Modal from "./../Modal";
 
 function Header() {
+  const [FAQ, setFAQ] = React.useState(false);
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.overflow = FAQ ? "hidden" : "auto";
+  });
   return (
     <div className="header">
       <div className="header_logo">
@@ -11,8 +16,9 @@ function Header() {
       <div className="header_icon">
         <Telegram />
         <Vk />
-        <Faq />
+        <Faq onClick={() => setFAQ(true)} />
       </div>
+      {FAQ && <Modal setOpen={setFAQ} />}
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Steam3 from "../../assets/img/steam3.png";
 import Steam4 from "../../assets/img/steam4.png";
 import "./modal.css";
 
-function Modal() {
+function Modal({ setOpen }) {
   const ModalIcon = [
     {
       img: Steam1,
@@ -48,32 +48,41 @@ function Modal() {
     },
   ];
   return (
-    <div className="modal">
-      <div className="modal_close_">
-        <Close />
-      </div>
-      <div className="modal_icon_flex">
-        {ModalIcon.map((data, index) => {
-          return (
-            <div key={data?.index} className="modal__icon_flex">
-              <div className="modal__icon">
-                <img src={data?.img} alt="" />
+    <div className="center-fixed-modal">
+      <div
+        className="modal-login-overlay"
+        onClick={() => setOpen(false)}
+        onContextMenu={() => setOpen(false)}
+        onMouseDownCapture={() => setOpen(false)}
+      />
+
+      <div className="modal">
+        <div className="modal_close_">
+          <Close onClick={() => setOpen(false)} />
+        </div>
+        <div className="modal_icon_flex">
+          {ModalIcon.map((data, i) => {
+            return (
+              <div key={i} className="modal__icon_flex">
+                <div className="modal__icon">
+                  <img src={data?.img} alt="" />
+                  {data?.svg}
+                </div>
                 <p>{data?.title}</p>
               </div>
-              {data?.svg}
-            </div>
-          );
-        })}
-      </div>
-      <div className="modal_question">
-        {ModalList.map((data, i) => {
-          return (
-            <div key={data.i} className="modal_question_card">
-              <p>{data?.title}</p>
-              {data?.svg}
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <div className="modal_question">
+          {ModalList.map((data, i) => {
+            return (
+              <div key={i} className="modal_question_card">
+                <p>{data?.title}</p>
+                {data?.svg}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
