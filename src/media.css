@@ -1,0 +1,180 @@
+@media screen and (max-width: 1441px) {
+  .home {
+    padding: 80px 60px;
+  }
+  .footer_main p:nth-child(2) {
+    width: 150px;
+  }
+  .footer {
+    overflow: hidden;
+  }
+  .login {
+    width: 100%;
+  }
+  .price_ {
+    width: 100%;
+  }
+  .home_left {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+  }
+  .home_left {
+    width: auto;
+    margin-bottom: 25px;
+  }
+  .home_right {
+    margin: 0px;
+  }
+  .card_ {
+    width: 50%;
+  }
+  .home_right {
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header_logo {
+    width: 35%;
+  }
+  .header_logo svg {
+    width: 100%;
+  }
+  .header_icon {
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .header_icon svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form_login p {
+    font-size: 12px;
+  }
+  .price_ input {
+    font-size: 20px;
+  }
+  .input_radio p {
+    font-size: 16px;
+  }
+  .checkbox_inp p {
+    font-size: 12px;
+  }
+  .home_form_icon p {
+    font-size: 16px;
+  }
+  .login > input {
+    font-size: 20px;
+  }
+  .home_left > h1 {
+    font-size: 30px;
+  }
+  .home {
+    padding: 50px 20px;
+  }
+  .form_login_flex {
+    width: 205px;
+  }
+  .home_left .forma button {
+    font-size: 20px;
+  }
+  .home_price_flex p {
+    font-size: 16px;
+  }
+  .footer_main p:nth-child(1) {
+    font-size: 12px;
+  }
+  .footer_main p:nth-child(2) {
+    font-size: 12px;
+    width: 120px;
+  }
+  .login {
+    padding: 10px;
+  }
+  .price_ {
+    padding: 10px;
+  }
+  .form_login {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 582px) {
+  .header {
+    padding: 20px;
+  }
+  .login > input {
+    width: 100%;
+  }
+  .form_login_flex {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .home {
+    padding: 5px 20px;
+  }
+  .home_left > h1 {
+    font-size: 20px;
+  }
+  .home_form_icon p {
+    font-size: 14px;
+  }
+  .login > input {
+      width: 75%;
+    font-size: 14px;
+  }
+  .price_ input {
+      font-size: 14px;
+  }
+  .input_radio p {
+      font-size: 14px;
+  }
+  .home_left .forma button {
+      font-size: 16px;
+      padding: 15px 0;
+  }
+  .d-grid-checkbox {
+      width: 33px;
+  }
+  .home_price_flex p {
+      font-size: 14px;
+  }
+  .card_ img{
+    width: 100%;
+  }
+  .master_card_flex{
+      flex-direction: column;
+      gap: 2vw;
+  }
+  .master_card{
+      display: flex;
+      gap: 2vw;
+  }
+  .card_{
+      width: 100%;
+      height: 67px;
+  
+  }
+}
+@media screen and (max-width: 412px) {
+    .form_login {
+        padding: 2px;
+    }
+    .form_login p {
+        font-size: 8px;
+    }
+    .card_ {
+        padding: 5px;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
