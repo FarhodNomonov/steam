@@ -23,7 +23,7 @@ function Home() {
             <Question />
             <p>Как это работает?</p>
           </div>
-          <form>
+          <div className='forma'>
             <label className="login">
               <input
                 {...register("login", { required: true })}
@@ -71,8 +71,8 @@ function Home() {
                 данных
               </p>
             </label>
-            <button>Пополнить</button>
-          </form>
+            <button type="submit">Пополнить</button>
+          </div>
           <div className="home_price">
             <div className="home_price_flex">
               <p>Заплатите:</p>
