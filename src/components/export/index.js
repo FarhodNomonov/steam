@@ -291,9 +291,11 @@ export const CheckboxChecked = ({ className = "icon" }) => {
   );
 };
 
-export const Close = () => {
+export const Close = ({ onClick }) => {
   return (
     <svg
+      onClick={onClick}
+      style={{ cursor: "pointer" }}
       width="27"
       height="27"
       viewBox="0 0 27 27"
