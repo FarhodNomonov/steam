@@ -307,3 +307,35 @@ export const Close = () => {
     </svg>
   );
 };
+export const Arrow = () => {
+  return (
+    <svg
+      width="24"
+      height="38"
+      viewBox="0 0 24 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.48584 33.1525L14.6075 19L0.48584 4.8475L4.83334 0.5L23.3333 19L4.83334 37.5L0.48584 33.1525Z"
+        fill="#171926"
+      />
+    </svg>
+  );
+};
+export const Plus = () => {
+  return (
+    <svg
+      width="20"
+      height="21"
+      viewBox="0 0 20 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.40634 20.1534V0.948853H12.2274V20.1534H8.40634ZM0.72168 12.4545V8.63351H19.9262V12.4545H0.72168Z"
+        fill="#A6AAC3"
+      />
+    </svg>
+  );
+};
