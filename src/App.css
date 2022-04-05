@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   outline: none;
+  user-select: none;
 }
 input[type="number"]::-webkit-inner-spin-button {
   display: none;

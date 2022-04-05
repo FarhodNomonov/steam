@@ -154,22 +154,25 @@ function Home() {
                   Подтвердите согласие на обработку персональных данных
                 </div>
               )}
-              <button className="button-linear" type="submit">Пополнить</button>
+              <button className="button-linear" type="submit">
+                Пополнить
+              </button>
             </div>
             <div className="home_price">
               <div className="home_price_flex">
                 <p>Заплатите:</p>
-                <div className="home_price_border"></div>
                 <p>
                   {isNaN(Number(CalcPrice(priceState).payment))
                     ? 0
-                    : Number(CalcPrice(priceState).payment)}
+                    : Number(CalcPrice(priceState).payment).toFixed(2) ===
+                      "0.00"
+                    ? 0
+                    : Number(CalcPrice(priceState).payment).toFixed(2)}
                   {"  "}Р
                 </p>
               </div>
               <div className="home_price_flex">
                 <p>Получите на баланс Steam:</p>
-                <div className="home_price_border"></div>
                 <p>
                   {isNaN(Number(CalcPrice(priceState).persent))
                     ? 0
@@ -179,8 +182,14 @@ function Home() {
               </div>
               <div className="home_price_flex">
                 <p>Комиссия:</p>
-                <div className="home_price_border"></div>
-                <p>{CalcPrice(priceState).comission} Р</p>
+                <p>
+                  {isNaN(CalcPrice(priceState).comission)
+                    ? 0
+                    : CalcPrice(priceState).comission === "0.00"
+                    ? 0
+                    : CalcPrice(priceState).comission}{" "}
+                  Р
+                </p>
               </div>
             </div>
           </div>
