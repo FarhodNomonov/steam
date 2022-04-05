@@ -41,6 +41,27 @@ function Home() {
   const onSubmit = (data) => console.log(data);
 
   const [priceState, setPriceState] = React.useState(null);
+  const [openNumber, setOpenNumber] = React.useState(false);
+
+  const CalcPrice = (price) => {
+    if (openNumber) {
+      const number = parseInt(price);
+      return {
+        persent:
+          Number(((number / 100) * 0.016).toFixed(2)) + Number(priceState),
+        payment:
+          Number(priceState) +
+          Number(
+            (
+              Number((priceState * 1.1411).toFixed(2)) - Number(priceState)
+            ).toFixed(2)
+          ),
+        comission: (
+          Number((priceState * 1.1411).toFixed(2)) - Number(priceState)
+        ).toFixed(2),
+      };
+    } else return 0;
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="home">
@@ -127,22 +148,27 @@ function Home() {
             <div className="home_price_flex">
               <p>Заплатите:</p>
               <div className="home_price_border"></div>
-              <p> {priceState > 0 ? (priceState * 1.1462).toFixed(2) : 0} Р</p>
+              <p>
+                {isNaN(Number(CalcPrice(priceState).payment))
+                  ? 0
+                  : Number(CalcPrice(priceState).payment)}
+                {"  "}Р
+              </p>
             </div>
             <div className="home_price_flex">
               <p>Получите на баланс Steam:</p>
               <div className="home_price_border"></div>
               <p>
-                {priceState > 0
-                  ? (priceState * 0.02).toFixed(2) + Number(priceState)
-                  : 0}
-                &nbsp;Р
+                {isNaN(Number(CalcPrice(priceState).persent))
+                  ? 0
+                  : Number(CalcPrice(priceState).persent)}
+                {"  "}Р
               </p>
             </div>
             <div className="home_price_flex">
               <p>Комиссия:</p>
               <div className="home_price_border"></div>
-              <p>0 Р</p>
+              <p>{CalcPrice(priceState).comission} Р</p>
             </div>
           </div>
         </div>
@@ -151,7 +177,7 @@ function Home() {
         <p>Выберите способ оплаты</p>
         <div className="master_card">
           <div className="master_card_flex">
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"viza"}
@@ -161,7 +187,7 @@ function Home() {
               <span></span>
               <img src={Viza} alt="..." />
             </label>
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"qiwi"}
@@ -173,7 +199,7 @@ function Home() {
             </label>
           </div>
           <div className="master_card_flex">
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"viza2"}
@@ -183,7 +209,7 @@ function Home() {
               <span></span>
               <img src={Viza} alt="..." />
             </label>
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"qiwi2"}
@@ -195,7 +221,7 @@ function Home() {
             </label>
           </div>
           <div className="master_card_flex">
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"viza3"}
@@ -205,7 +231,7 @@ function Home() {
               <span></span>
               <img src={Viza} alt="..." />
             </label>
-            <label className="card_">
+            <label className="card_" onClick={() => setOpenNumber(true)}>
               <input
                 type="radio"
                 value={"qiwi3"}
