@@ -52,6 +52,9 @@ function Home() {
             <p>Как это работает?</p>
           </div>
           <div className="forma">
+            {errors.login && (
+              <div className="error-input-text">Введите логин</div>
+            )}
             <label className="login">
               <input
                 {...register("login", { required: true })}
@@ -67,14 +70,16 @@ function Home() {
                 <User />
               </div>
             </label>
+            {errors.price && (
+              <div className="error-input-text">Введите Сумма</div>
+            )}
             <label className="price_">
               <input
-                {...register("price", { required: true })}
                 type="number"
                 placeholder="Сумма пополнения"
-                value={priceState > 0 ? priceState : ""}
+                {...register("price", { required: true })}
                 onChange={(e) => setPriceState(e.target.value)}
-                autoComplete="off"
+                value={priceState > 0 ? priceState : ""}
               />
               <Billford />
             </label>
@@ -98,7 +103,10 @@ function Home() {
               })}
             </div>
             <label className="checkbox_inp">
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                {...register("oferta", { required: true })}
+              />
               <div className="d-grid-checkbox">
                 <Checkbox className="default-checkbox" />
                 <CheckboxChecked className="checked-checkbox" />
@@ -108,18 +116,28 @@ function Home() {
                 данных
               </p>
             </label>
+            {errors.oferta && (
+              <div className="error-input-text">
+                Подтвердите согласие на обработку персональных данных
+              </div>
+            )}
             <button type="submit">Пополнить</button>
           </div>
           <div className="home_price">
             <div className="home_price_flex">
               <p>Заплатите:</p>
               <div className="home_price_border"></div>
-              <p>0 Р</p>
+              <p> {priceState > 0 ? (priceState * 1.1462).toFixed(2) : 0} Р</p>
             </div>
             <div className="home_price_flex">
               <p>Получите на баланс Steam:</p>
               <div className="home_price_border"></div>
-              <p>0 Р</p>
+              <p>
+                {priceState > 0
+                  ? (priceState * 0.02).toFixed(2) + Number(priceState)
+                  : 0}
+                &nbsp;Р
+              </p>
             </div>
             <div className="home_price_flex">
               <p>Комиссия:</p>
@@ -198,6 +216,9 @@ function Home() {
               <img src={Qiwi} alt="..." />
             </label>
           </div>
+          {errors.card && (
+            <div className="error-input-text">Выберите способ оплаты</div>
+          )}
         </div>
       </div>
     </form>

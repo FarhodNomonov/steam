@@ -131,6 +131,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .checkbox_inp p {
   font-style: normal;
@@ -144,15 +145,44 @@
 .checkbox_inp input {
   display: none;
 }
+.checkbox_inp .d-grid-checkbox svg {
+  transition: 100ms ease;
+  -webkit-transition: 100ms ease;
+  -moz-transition: 100ms ease;
+  -ms-transition: 100ms ease;
+  -o-transition: 100ms ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.checkbox_inp input:checked ~ .d-grid-checkbox .default-checkbox {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.d-grid-checkbox .checked-checkbox {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.checkbox_inp input:checked ~ .d-grid-checkbox .checked-checkbox {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
 
-.checkbox_inp input:checked ~ .default-checkbox {
-  display: none;
-}
-.checkbox_inp .checked-checkbox {
-  display: none;
-}
-.checkbox_inp input:checked ~ .checked-checkbox {
-  display: inline-block !important;
+.d-grid-checkbox {
+  display: grid;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  position: relative;
 }
 
 .home_left .forma button {
@@ -175,6 +205,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  position: relative;
 }
 .home_price_flex p {
   font-style: normal;
@@ -184,9 +215,20 @@
   letter-spacing: 0.03em;
   color: #a6aac3;
 }
-.home_price_border {
-  border-bottom: 1px solid #a6aac3;
-  width: 55%;
+.home_price_flex::after {
+  border-bottom: 2px dashed rgba(166, 170, 195, 0.3);
+  bottom: 6px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.home_price_flex * {
+  z-index: 2;
+  background: #171926;
 }
 .home_right {
   height: 50%;
@@ -235,4 +277,8 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.error-input-text {
+  color: red;
+  margin: 5px 0;
 }
