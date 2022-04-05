@@ -1,12 +1,21 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import "./home.css";
 import { Billford, Question, User } from "./../export/index";
 import Viza from "../../assets/img/Visa.png";
 import Qiwi from "../../assets/img/Qiwi.png";
 
 function Home() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+
   return (
-    <div className="home">
+    <form onSubmit={handleSubmit(onSubmit)} className="home">
       <div className="home_left">
         <h1>Пополни баланс Steam</h1>
         <div className="home_form">
@@ -16,7 +25,11 @@ function Home() {
           </div>
           <form>
             <label className="login">
-              <input type="text" placeholder="Ваш логин" />
+              <input
+                {...register("login", { required: true })}
+                type="text"
+                placeholder="Ваш логин"
+              />
               <div className="form_login_flex">
                 <div className="form_login">
                   <Question />
@@ -26,7 +39,11 @@ function Home() {
               </div>
             </label>
             <label className="price_">
-              <input type="number" placeholder="Сумма пополнения" />
+              <input
+                {...register("price", { required: true })}
+                type="number"
+                placeholder="Сумма пополнения"
+              />
               <Billford />
             </label>
             <label className="radio_price">
@@ -79,32 +96,38 @@ function Home() {
         <p>Выберите способ оплаты</p>
         <div className="master_card">
           <div className="master_card_flex">
-            <div className="card_">
+            <label className="card_">
+              <input type="radio" />
               <img src={Viza} alt="..." />
-            </div>
-            <div className="card_">
+            </label>
+            <label className="card_">
+              <input type="radio" />
               <img src={Qiwi} alt="..." />
-            </div>
+            </label>
           </div>
           <div className="master_card_flex">
-            <div className="card_">
+            <label className="card_">
+              <input type="radio" />
               <img src={Viza} alt="..." />
-            </div>
-            <div className="card_">
+            </label>
+            <label className="card_">
+              <input type="radio" />
               <img src={Qiwi} alt="..." />
-            </div>
+            </label>
           </div>
           <div className="master_card_flex">
-            <div className="card_">
+            <label className="card_">
+              <input type="radio" />
               <img src={Viza} alt="..." />
-            </div>
-            <div className="card_">
+            </label>
+            <label className="card_">
+              <input type="radio" />
               <img src={Qiwi} alt="..." />
-            </div>
+            </label>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
 
