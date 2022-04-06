@@ -19,6 +19,22 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .home,
+  .header {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .home,
+  .header {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .modal_icon_flex {
     gap: 10px;

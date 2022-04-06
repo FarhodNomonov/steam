@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   padding: 124px 60px;
+  margin: 0 auto;
+  width: 80%;
 }
 .home_left {
   width: 759px;
@@ -30,6 +32,11 @@
   color: #a6aac3;
   margin-left: 10px;
 }
+.price_:hover,
+.login:hover {
+  background: #252531;
+}
+.login:active,
 .login {
   display: flex;
   align-items: center;
@@ -39,7 +46,13 @@
   background: #202232;
   margin-bottom: 30px;
   border-radius: 12px;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
 }
+
 .login > input {
   font-style: normal;
   font-weight: 400;
@@ -92,6 +105,11 @@
   margin-bottom: 30px;
   padding: 16px 36px;
   border-radius: 12px;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
 }
 .price_ input {
   font-style: normal;
@@ -259,6 +277,7 @@
   }
   .home_right.respons-min {
     display: block;
+    margin-bottom: 20px;
   }
 }
 .home_right > p {
