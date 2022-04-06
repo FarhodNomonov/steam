@@ -8,6 +8,7 @@ import {
   Checkbox,
   CheckboxChecked,
   CustomCard,
+  Faq,
   Question,
   User,
 } from "./../export";
@@ -19,6 +20,7 @@ import tron from "../../assets/img/tron.svg";
 import ethereum from "../../assets/img/ethereum.svg";
 import { CustomCheck } from "./../export";
 import ModalLogin from "./../modallogin";
+import Modal from "./../Modal/index";
 
 const prices = [
   {
@@ -54,6 +56,7 @@ function Home() {
 
   const [priceState, setPriceState] = React.useState(null);
   const [openNumber, setOpenNumber] = React.useState(false);
+  const [FAQ, setFAQ] = React.useState(false);
 
   const [openUserLogin, setOpenUserLogin] = React.useState(false);
 
@@ -82,12 +85,13 @@ function Home() {
   return (
     <>
       {openUserLogin && <ModalLogin setOpen={setOpenUserLogin} />}
+      {FAQ && <Modal setOpen={setFAQ} />}
 
       <form onSubmit={handleSubmit(onSubmit)} className="home">
         <div className="home_left">
           <h1>Пополни баланс Steam</h1>
           <div className="home_form">
-            <div className="home_form_icon">
+            <div onClick={() => setFAQ(true)} className="home_form_icon">
               <Question />
               <p>Как это работает?</p>
             </div>
