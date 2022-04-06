@@ -165,6 +165,9 @@
   .home_left > h1 {
     font-size: 30px;
   }
+  .header {
+    padding: 15px 20px;
+  }
   .home {
     padding: 0px 20px;
   }
@@ -281,6 +284,7 @@
   .home {
     padding: 5px 20px;
   }
+
   .card_ {
     max-width: 28vw;
     width: 100%;
@@ -307,10 +311,13 @@
     padding: 15px 0;
   }
   .d-grid-checkbox {
-    width: 33px;
+    width: 40px;
   }
   .home_price_flex p {
     font-size: 14px;
+  }
+  .home_price_flex p:nth-child(2) {
+    font-size: 16px;
   }
   .card_ img {
     width: 100%;
@@ -337,5 +344,14 @@
   }
   .form_login {
     padding: 5px 12px;
+  }
+  .home_price_flex {
+    margin-bottom: 12px;
+  }
+  .header_logo svg {
+    height: 40px;
+  }
+  .error-input-text {
+    font-size: 10px;
   }
 }

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 .home {
   background: #171926;
   display: flex;
   justify-content: space-between;
   padding: 124px 60px;
+  padding-top: 0 !important;
   margin: 0 auto;
   width: 80%;
 }
@@ -19,7 +21,7 @@
   margin-bottom: 27px;
 }
 .home_form_icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
@@ -36,7 +38,6 @@
 .login:hover {
   background: #252531;
 }
-.login:active,
 .login {
   display: flex;
   align-items: center;
@@ -245,6 +246,13 @@
   letter-spacing: 0.03em;
   color: #a6aac3;
 }
+
+.home_price_flex p:nth-child(2) {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
 .home_price_flex::after {
   border-bottom: 2px dashed rgba(166, 170, 195, 0.3);
   bottom: 6px;
@@ -335,4 +343,7 @@
   height: 100%;
   object-fit: contain;
   user-select: none;
+}
+.footer_main p {
+  width: max-content;
 }

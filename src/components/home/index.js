@@ -8,7 +8,6 @@ import {
   Checkbox,
   CheckboxChecked,
   CustomCard,
-  Faq,
   Question,
   User,
 } from "./../export";
@@ -52,6 +51,7 @@ function Home() {
     console.log(data);
     reset();
     setPriceState(null);
+    setOpenNumber(false);
   };
 
   const [priceState, setPriceState] = React.useState(null);
@@ -99,24 +99,26 @@ function Home() {
               {errors.login && (
                 <div className="error-input-text">Введите логин</div>
               )}
-              <label className="login">
+              <div className="login">
                 <input
+                  id="login"
                   {...register("login", { required: true })}
                   type="text"
                   placeholder="Ваш логин"
                   autoComplete="off"
                 />
-                <div className="form_login_flex">
-                  <div
+                <label htmlFor="login" className="form_login_flex">
+                  <label
+                    htmlFor="modal-opener"
                     className="form_login"
                     onClick={() => setOpenUserLogin(true)}
                   >
                     <Question />
                     <p>Где взять логин?</p>
-                  </div>
+                  </label>
                   <User />
-                </div>
-              </label>
+                </label>
+              </div>
               {errors.price && (
                 <div className="error-input-text">Введите Сумма</div>
               )}
