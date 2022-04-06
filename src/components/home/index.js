@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import "./home.css";
 import {
   Billford,
@@ -162,6 +164,142 @@ function Home() {
                   Подтвердите согласие на обработку персональных данных
                 </div>
               )}
+              <div className="home_right respons-min">
+                <p>Выберите способ оплаты</p>
+                <div className="master_card" style={{ marginBottom: "20px" }}>
+                  <Swiper
+                    slidesPerView={3}
+                    spaceBetween={20}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"viza"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={Viza}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"qiwi"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={Qiwi}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"ethereum"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={ethereum}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"tron"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={tron}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"tether"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={tether}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <label
+                        className="card_"
+                        style={{ width: "100%" }}
+                        onClick={() => setOpenNumber(true)}
+                      >
+                        <input
+                          type="radio"
+                          value={"umoney"}
+                          {...register("card", { required: true })}
+                          name="card"
+                        />
+                        <span></span>
+                        <img
+                          style={{ width: "80%", height: "80%" }}
+                          src={umoney}
+                          alt="..."
+                        />
+                      </label>
+                    </SwiperSlide>
+                  </Swiper>
+                  {errors.card && (
+                    <div className="error-input-text">
+                      Выберите способ оплаты
+                    </div>
+                  )}
+                </div>
+              </div>
               <button className="button-linear" type="submit">
                 Пополнить
               </button>
