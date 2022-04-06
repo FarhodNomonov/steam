@@ -60,7 +60,11 @@ function Home() {
 
   const [openUserLogin, setOpenUserLogin] = React.useState(false);
 
-  document.body.style.overflow = openUserLogin ? "hidden" : "auto";
+  document.body.style.overflow = openUserLogin
+    ? "hidden"
+    : FAQ
+    ? "hidden"
+    : "auto";
 
   const CalcPrice = (price) => {
     if (openNumber) {
