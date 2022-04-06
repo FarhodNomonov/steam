@@ -11,9 +11,18 @@
 input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
+body {
+  background: #171926;
+}
 
 .App {
-  background: #171926;
+  width: 100%;
+}
+.container-main {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh - 70px);
 }
 ::placeholder {
   color: #a6aac3;

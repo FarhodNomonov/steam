@@ -7,10 +7,12 @@ import "./assets/styles/media.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="container-main">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
