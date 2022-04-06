@@ -1,6 +1,11 @@
+@media screen and (max-width: 1920px) {
+  .home {
+    padding: 70px 160px 0 90px;
+  }
+}
 @media screen and (max-width: 1441px) {
   .home {
-    padding: 80px 60px;
+    padding: 10px 20px;
   }
   .footer_main p:nth-child(2) {
     width: 150px;
@@ -18,12 +23,19 @@
     width: 650px;
   }
 }
-
+@media screen and (max-width: 1700px) {
+  .home {
+    padding: 10px 108px 0 50px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .home,
   .header {
     margin: 0 auto;
     width: 90%;
+  }
+  .home {
+    padding: 10px 100px 0 45px;
   }
 }
 
@@ -36,6 +48,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .home {
+    padding: 10px 45px 0 45px;
+  }
   .modal_icon_flex {
     gap: 10px;
   }
@@ -99,6 +114,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
   .modal_close_ {
     justify-content: center;
   }
@@ -238,7 +256,7 @@
 }
 @media screen and (max-width: 582px) {
   .header {
-    padding: 0 20px;
+    padding: 20px;
   }
   .d-grid-checkbox {
     width: 20px;
