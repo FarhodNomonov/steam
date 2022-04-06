@@ -1,8 +1,8 @@
 .header {
   background: #171926;
-  padding: 55px 20px;
+  padding: 55px 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header_icon {

@@ -1,8 +1,8 @@
 .home {
   background: #171926;
   display: flex;
-  justify-content: center;
-  padding: 124px 100px;
+  justify-content: space-between;
+  padding: 124px 60px;
 }
 .home_left {
   width: 759px;
