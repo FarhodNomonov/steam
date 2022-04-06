@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .home_form_icon p {
   font-style: normal;

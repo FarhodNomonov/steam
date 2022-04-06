@@ -13,3 +13,8 @@
   margin: 0 10px;
   cursor: pointer;
 }
+.header_icon svg:hover path,
+.modal_close_ svg:hover path,
+.modal_icon_close svg:hover path {
+  fill: #fff;
+}
