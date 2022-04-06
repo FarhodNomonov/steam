@@ -310,16 +310,16 @@
   .card_ {
     margin-right: 12px;
   }
-}
-.form_login p {
-  font-size: 8px;
-}
-.card_ {
-  padding: 5px;
-}
-.footer {
-  padding: 10px;
-}
-.form_login {
-  padding: 5px 12px;
+  .form_login p {
+    font-size: 8px;
+  }
+  .card_ {
+    padding: 5px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .form_login {
+    padding: 5px 12px;
+  }
 }
