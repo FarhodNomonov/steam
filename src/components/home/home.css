@@ -8,7 +8,7 @@
   width: 80%;
 }
 .home_left {
-  width: 759px;
+  width: 100%;
 }
 .home_left > h1 {
   font-style: normal;
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 759px;
+  width: 100%;
   padding: 14px 36px;
   background: #202232;
   margin-bottom: 30px;
@@ -100,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 759px;
+  width: 100%;
   background: #202232;
   margin-bottom: 30px;
   padding: 16px 36px;
@@ -274,6 +274,9 @@
   border-radius: 12px;
   border: 1px solid #202232;
   padding: 20px 35px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .home_right.respons-min {
   display: none;
@@ -299,6 +302,7 @@
 .master_card_flex {
   display: flex;
   margin-bottom: 20px;
+  gap: 20px;
 }
 .card_ {
   width: 170px;
@@ -310,7 +314,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
   cursor: pointer;
   position: relative;
   overflow: hidden;

@@ -124,11 +124,11 @@ function Home() {
               )}
               <label className="price_">
                 <input
-                  type="number"
                   placeholder="Сумма пополнения"
                   {...register("price", { required: true })}
                   onChange={(e) => setPriceState(e.target.value)}
                   value={priceState > 0 ? priceState : ""}
+                  type="number"
                 />
                 <Billford />
               </label>
@@ -153,8 +153,8 @@ function Home() {
               </div>
               <label className="checkbox_inp">
                 <input
-                  type="checkbox"
                   {...register("oferta", { required: true })}
+                  type="checkbox"
                 />
                 <div className="d-grid-checkbox">
                   <Checkbox className="default-checkbox" />

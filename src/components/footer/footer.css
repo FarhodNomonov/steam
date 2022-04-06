@@ -9,6 +9,28 @@
 .footer_main {
   display: flex;
   align-items: center;
+  animation: animate-left 35s linear infinite;
+  -webkit-animation: animate-left 35s linear infinite;
+  cursor: grab;
+}
+.footer_main:active {
+  cursor: grabbing;
+}
+@keyframes animate-left {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+  }
 }
 .footer_main p:nth-child(1) {
   font-style: normal;

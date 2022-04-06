@@ -1,12 +1,4 @@
-@media screen and (max-width: 1920px) {
-  .home {
-    padding: 70px 160px 0 90px;
-  }
-}
 @media screen and (max-width: 1441px) {
-  .home {
-    padding: 10px 20px;
-  }
   .footer_main p:nth-child(2) {
     width: 150px;
   }
@@ -19,14 +11,6 @@
   .price_ {
     width: 100%;
   }
-  .home_left {
-    width: 650px;
-  }
-}
-@media screen and (max-width: 1700px) {
-  .home {
-    padding: 10px 108px 0 50px;
-  }
 }
 @media screen and (max-width: 1600px) {
   .home,
@@ -34,15 +18,15 @@
     margin: 0 auto;
     width: 90%;
   }
-  .home {
-    padding: 10px 100px 0 45px;
-  }
 }
 
 @media screen and (max-width: 1400px) {
   .home,
   .header {
     margin: 0 auto;
+    width: 100%;
+  }
+  .card_ {
     width: 100%;
   }
 }
@@ -54,6 +38,7 @@
   .modal_icon_flex {
     gap: 10px;
   }
+
   .modal_question {
     padding: 0;
   }
