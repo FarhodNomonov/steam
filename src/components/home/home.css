@@ -6,6 +6,7 @@
   padding-top: 0 !important;
   margin: 0 auto;
   width: 80%;
+  padding-bottom: 10px !important;
 }
 .home_left {
   width: 100%;
@@ -32,6 +33,7 @@
   line-height: 24px;
   color: #a6aac3;
   margin-left: 10px;
+
 }
 .price_:hover,
 .login:hover {
